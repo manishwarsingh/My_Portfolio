@@ -31,7 +31,25 @@ pnpm-debug.log*
 *.swo
 *~
 
-# OS files
+# OS files- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 6.50s
+
+> Portfolio-Website@0.0.0 deploy
+> gh-pages -d dist
+
+ProcessError: Cloning into '/home/anviam113/Desktop/projects/Portfolio-Website/node_modules/.cache/gh-pages/git@github.com!manishwarsingh!My_Portfolio.git'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+    at ChildProcess.<anonymous> (/home/anviam113/Desktop/projects/Portfolio-Website/node_modules/gh-pages/lib/git.js:42:16)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5)
 Thumbs.db
 Desktop.ini
 
