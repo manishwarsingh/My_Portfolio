@@ -1,0 +1,74 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env
+.env.*
+
+# local env files
+.vscode/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 6.50s
+
+> Portfolio-Website@0.0.0 deploy
+> gh-pages -d dist
+
+ProcessError: Cloning into '/home/anviam113/Desktop/projects/Portfolio-Website/node_modules/.cache/gh-pages/git@github.com!manishwarsingh!My_Portfolio.git'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+    at ChildProcess.<anonymous> (/home/anviam113/Desktop/projects/Portfolio-Website/node_modules/gh-pages/lib/git.js:42:16)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1124:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5)
+Thumbs.db
+Desktop.ini
+
+# lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Vite
+/.vite
+
+# Typescript cache
+*.tsbuildinfo
+
+# JetBrains
+.idea/
+
+# build output
+/dist
+
+# storybook
+/storybook-static
